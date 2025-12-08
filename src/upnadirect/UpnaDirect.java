@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package upnadirect;
+import java.util.Scanner;
 
 /**
  *
@@ -11,11 +12,12 @@ package upnadirect;
  */
 public class UpnaDirect {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        IVistaConsola vista = new VistaConsola();
+        OfertaVentajosa modelo = new OfertaVentajosa();
+        PresentadorOferta presentador = new PresentadorOferta(vista, modelo);
+        presentador.registrarClienteYBien();
+        presentador.mostrarOferta(); 
     }
     
 }
