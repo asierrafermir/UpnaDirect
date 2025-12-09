@@ -28,7 +28,7 @@ public class Bien {
     }
 
     public int getValor(){
-        if (valor < 0 || (!(tipo.equalsIgnoreCase("Vehiculo")) && valor > 50000) || (!(tipo.equalsIgnoreCase("Vivienda")) && valor < 500000)){
+        if (valor < 0 || ((tipo.equalsIgnoreCase("Vehiculo")) && valor > 50000) || ((tipo.equalsIgnoreCase("Vivienda")) && valor < 500000)){
             System.out.println("Valor del bien inválido.");
             return -1;
         } else {
