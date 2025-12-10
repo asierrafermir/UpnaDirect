@@ -19,10 +19,8 @@ public class Aseguradora {
     public String getNombre(){
         if (!(nombre.equalsIgnoreCase("Mafro") || nombre.equalsIgnoreCase("Linea Indirecta") || nombre.equalsIgnoreCase("Adasles"))){
             System.out.println("Nombre de aseguradora inválido.");
-            return null;
-        } else {
-            return nombre;
         }
+        return nombre;
     }
 
     public Double getPorcentajeImporte(Cliente cliente, Bien bien){
